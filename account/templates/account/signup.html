@@ -27,7 +27,7 @@
               <a class="nav-link" href="{% url 'login' %}">로그인</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'logout' %}">로그아웃</a>
+                <a class="nav-link" href="{% url 'logout' %}">로그아웃</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">글쓰기</a>
@@ -36,14 +36,24 @@
         </div>
       </nav>
 
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-    </div>
+    <h1>환영합니다!</h1>
+    <form action="{% url 'signup' %}" method="POST">
+        {% csrf_token %}
+        Username:
+        <br>
+        <input type="text" name="username" value="">
+        <br>
+        Password:
+        <br>
+        <input type="password" name="password1" value="">
+        <br>
+        Confirm Password:
+        <br>
+        <input type="password" name="password2" value="">
+        <br>
+        <br>
+        <input type="submit" value="sign up!">        
+
+    </form>
 </body>
 </html>
