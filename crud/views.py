@@ -21,7 +21,16 @@ def create(request):
         return render(request, 'crud/new.html', {'form':form})
 
 def update(request, pk):
-    return
+    blog = get_object_or_404(Blog, pk = pk)
+    form = NewBlog(request.POST, instance=blog)
+
+    if form.is_valid():
+        form.save()
+        return redirect('home')
+
+    return render(request, 'crud/new.html', {'form':form})
 
 def delete(request, pk):
-    return
+    blog = get_object_or_404(Blog, pk = pk)
+    blog.delete()
+    return redirect('home')
