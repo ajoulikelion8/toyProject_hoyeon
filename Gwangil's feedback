@@ -1,0 +1,13 @@
+1) Url Include
+--> url이 너무 난잡하기 때문에 따로 앱마다 관리하고 include하기
+
+2) django user model custom
+--> user 여러개 커스텀해보기
+
+3) templates block
+
+4) Model branch 따로 파서 model 관리
+
+5) master branch는 절대적으로 깨끗하게 유지, branch 파서 FR & merge
+
+6) delete() 함수 user 고려
