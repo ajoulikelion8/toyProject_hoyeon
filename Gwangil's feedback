@@ -11,3 +11,19 @@
 5) master branch는 절대적으로 깨끗하게 유지, branch 파서 FR & merge
 
 6) delete() 함수 user 고려
+
+
+User develop
+1) css 유동적 (content에 따라 달라지도록)
+
+2) 삭제 confirm/ 삭제 user 인증
+
+3) model 6개 이상 사용
+
+4)html에 JS 추가
+
+5)이미지 업로드, 이미지 다중 업로드
+
+6)model default, null 값
+
+scss 사용, 반응형
