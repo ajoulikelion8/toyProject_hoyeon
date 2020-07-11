@@ -1,4 +1,4 @@
-# toyProject-hoyeon-
+# 🥳toyProject-hoyeon🥳
 승욱 수훈 호연 수연 영윤이의 첫 토이 프로젝트(crud, 로그인 기능)
 우리가 할 것 : Blog 서비스~.~
 
